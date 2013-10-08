@@ -14,21 +14,33 @@ _Name                       Email                           GitHub Username     
   - Sherry XIA                  x_sherry_xia@berkeley.edu       [xsherryxia](https://github.com/xsherryxia)                  Administrator
 
 
-Horizontal Group, Producers (Analyzers)
+_How to Complete Homework-02: Questionaire & Data Wrangling_
 -----
-_Name                       Email                           GitHub Username_
-  - Laura Catherine CUNNINGHAM  lccunningham@berkeley.edu       lauraccunningham
-  - Yee Tung MAN                aliceman@berkeley.edu           amx01
-  - Alyssa Janine PARKER        alyssaparker@berkeley.edu       aparker92
-  - John RISKO                  snowstorm1@berkeley.edu         johnrisko
-  - Teresa R TENFELDER          teresatenfelder@berkeley.edu    teresita
-  - Khoa Quang Dang TRAN        khoatran@berkeley.edu           kqdtran
-  - David WANG                  davidwang001@berkeley.edu       davidwang001
-  - Tay WON SHIN                taywonshin@berkeley.edu         taywon
-  - Qi ZHANG                    qi.zhang@berkeley.edu           qi-zhang	
-  - Jody ZHANG                  jodyzhang@berkeley.edu          j-zhang
+
+*GOAL*: To see if there is a relationship between the VARK Scores and suggested roles as opposed to the projected roles within groups we see ourselves as.  To look at the columns "What type of Learning Style?" and the following four columns, we were able to identify where we are perceived and how we perceive ourselves along the spectrum of group members.
+
+Parameters:
+	-	Types of VARK Scores: Aural, Visual, Read/Write, Kinesthetic
+	-	Group Roles: Administrator, Producer, Entrepreneur, Integrator
+	-	Responses: Always, Sometimes, Often, Not Often
 
 _Data for the questionnaire can be found at: http://goo.gl/Cplm9O_
+
+_Curation_	SHERRY
+
+_Analysis_ 
+	-	From the Curator's data, we used 'git clone' to transfer our "dataCuration.ipynb" file into our virtual machine.
+		-	In opening our virtual machine, we have run the commands
+			'git clone http://github.com/lauraccunningham/homework-02.git'.
+			This copied our GitHub repository over to the virtual machine.
+		-	Now, we need to make sure that when we open our iPython Notebook, we are in the correct directory.  To make sure of this, go through your basic UNIX commands to move around until in the right directory.  In our case, the necessary commands were 'cd homework-02/'.
+		-	To open the iPython Notebook, run 'ipython notebook --ip=0.0.0.0 --no-browser' and open '127.0.0.1:7777' in an opened browser.  Here you should see within the homework-02 repository all necessary and up to date files from GitHub.
+	-	Using basic Python syntax, you can continue to parse and examine the data.  We used a basic for loop to run through all of the data and determine sums, lengths, and averages of each of the four VARK scores, and prevelance of the student responses.
+
+_Visualization_	ASHLEY
+
+_Presentation_	DAVID
+
 
 Objective
 ----

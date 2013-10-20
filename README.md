@@ -48,8 +48,8 @@ From here we will now be able to run and operate out iPython Notebook.  Within y
 
 .
 
-Our Final Project: [Repository](https://github.com/lauraccunningham/homework-03
-) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-03/master/?.ipynb)
+Our Final Project: [Repository](https://github.com/lauraccunningham/homework-02
+) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/?.ipynb)
 
 ==========
 

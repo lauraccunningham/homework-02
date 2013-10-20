@@ -39,10 +39,11 @@ Open a new directory within your virtual machine.  Here is where I am going to s
     mkdir homework-02
     ls
     cd homework-02
+    
     ipython notebook --ip=0.0.0.0 --no-browser --script --pylab=inline
 
 
-From here we will now be able to run and operate out iPython Notebook.  Within your browser (ie. Safari) type into your bar `127.0.0.1:7777` to open the iPython Dashboard.  Here you should be all set to begin, and in the correct location for **homework-02**.
+From here we will now be able to run and operate out iPython Notebook.  Within your browser open `127.0.0.1:7777` for seeing your iPython Dashboard.  Here you should be all set to begin, and in the correct location for **homework-02**.
 
 **Curation, Analysis, & Visualization**
 

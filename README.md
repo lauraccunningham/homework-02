@@ -39,7 +39,7 @@ Open a new directory within your virtual machine.  Here is where I am going to s
     mkdir homework-02
     ls
     cd homework-02
-    
+
     ipython notebook --ip=0.0.0.0 --no-browser --script --pylab=inline
 
 
@@ -50,7 +50,7 @@ From here we will now be able to run and operate out iPython Notebook.  Within y
 .
 
 Our Final Project: [Repository](https://github.com/lauraccunningham/homework-02
-) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/?.ipynb)
+) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data.ipynb.json)
 
 ==========
 

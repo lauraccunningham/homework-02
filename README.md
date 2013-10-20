@@ -1,4 +1,4 @@
-homework-03
+homework-02
 ===========
 Due October 21, 2013
 
@@ -7,11 +7,11 @@ Due October 21, 2013
 
 Vertical Group, #2
 -----
-_Role -- Name ( [GitHub Account Homepage](https://github.com) )_
-  - Administrator -- Sherry XIA ( [xsherryxia](https://github.com/xsherryxia) )
-  - Producer -- Laura CUNNINGHAM ( [lauraccunningham](https://github.com/lauraccunningham) )            
-  - Entrepreneur -- Ashley SIA ( [ashleysia](https://github.com/ashleysia) )
-  - Integrator -- David LAU ( [davidopluslau](https://github.com/davidopluslau) )
+_Name ( [GitHub Account Homepage](https://github.com) )_
+  - Laura CUNNINGHAM ( [lauraccunningham](https://github.com/lauraccunningham) )            
+  - David LAU ( [davidopluslau](https://github.com/davidopluslau) )
+  - Ashley SIA ( [ashleysia](https://github.com/ashleysia) )
+  - Sherry XIA ( [xsherryxia](https://github.com/xsherryxia) )
 
 Step-by-step Instructions for Homework-03
 -----
@@ -22,28 +22,33 @@ Step-by-step Instructions for Homework-03
 
 **Parameters**
 
--	.
--	.
--	.
+- .
+- .
+- .
 
-_Data from the ? can be found at: ?_
+_Earthquake data can be found [here](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) and at the right, the appropriate feed can be chosen for this assignment.  For our purposes, we will be choosing the data for [all earthquakes in the past 30 days](http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson)_
 
 **To Begin, Preliminary Steps**
 
 You will need to first open your Virtual Machine.  Log in, and get it running!  From here type in the following commands as we want to make sure you are able to run iPython Notebook and all necessary packages.
 
-    sudo apt-get install libgeos-3.3.3 python-mpltoolkits.basemap python-mpltoolkits.basemap-data python-mpltoolkits.basemap-doc
-    ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline
+    sudo apt-get install libgeos-3.3.3 python-mpltoolkits.basemap python-mpltoolkits.basemap-data python-mpltoolkits.basemap-doc python-pandas
 
-**Additional Preliminary Steps**
+Open a new directory within your virtual machine.  Here is where I am going to store my information for homework-02 and enter this directory.  From here we will open our iPython Notebook.
+
+  mkdir homework-02
+  ls
+  cd homework-02
+  ipython notebook --ip=0.0.0.0 --no-browser --script --pylab=inline
+
+From here we will now be able to run and operate out iPython Notebook.  Within your browser (ie. Safari) type into your bar `127.0.0.1:7777` to open the iPython Dashboard.  Here you should be all set to begin, and in the correct location for homework-02.
+
+**Curation, Analysis, & Visualization**
 
 .
 
-**Curation, Analysis, Visualization, Presentation**
-
-.
-
-Our Final Project: [Repository](https://github.com/lauraccunningham/homework-03) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-03/master/?.ipynb)
+Our Final Project: [Repository](https://github.com/lauraccunningham/homework-03
+) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-03/master/?.ipynb)
 
 ==========
 

@@ -13,7 +13,7 @@ _Name ( [GitHub Account Homepage](https://github.com) )_
   - Ashley SIA ( [ashleysia](https://github.com/ashleysia) )
   - Sherry XIA ( [xsherryxia](https://github.com/xsherryxia) )
 
-Step-by-step Instructions for Homework-03
+Step-by-Step Instructions for Homework-02
 -----
 
 **GOAL**

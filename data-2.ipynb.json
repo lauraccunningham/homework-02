@@ -1,0 +1,62 @@
+{
+ "metadata": {
+  "name": "data.ipynb"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "import urllib\nimport json\nfrom pandas import read_csv\n\"\"\"\nimport pandas as pd\nfrom cPickle import load, dump\nfrom pprint import pprint\nfrom datetime import date\n\"\"\"",
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "url = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson'\ndata = json.loads(urllib.urlopen(url).read())",
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "\"\"\"print data\"\"\"",
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "dataframe = pd.DataFrame(data.items())\nprint dataframe",
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "\"\"\"\ndataframe[1][1][0]\n\nearthquakes = []\n\nfor fields in dataframe[1][1]:\n\n    src = fields['properties']['net']\n    eqid = fields['properties']['code']\n    datetime = fields['properties']['time']\n    lon = fields['geometry']['coordinates'][0]\n    lat = fields['geometry']['coordinates'][1]\n    mag = fields['properties']['mag']\n    depth = fields['geometry']['coordinates'][2]\n    nst = fields['properties']['nst']\n    place = fields['properties']['place']\n    \n    earthquake = []\n    earthquake.append(src)\n    earthquake.append(eqid)\n    earthquake.append(datetime)\n    earthquake.append(lat)\n    earthquake.append(lon)\n    earthquake.append(mag)\n    earthquake.append(depth)\n    earthquake.append(nst)\n    earthquake.append(place)\n    earthquakes.append(earthquake)\n\n#earthquakes\n\ndf = pd.DataFrame(np.array(earthquakes), columns = ['Src','Eqid','Datetime','Lat','Lon','Mag','Depth','Nst','Place'])\ndf[0:100]\n\n\n\ncalifornia = df[df.Src=='ci']\ncalifornia[0:5]\nprint california.Lon[0:5]\ncalifornia.Lat[0:5]\n\nfrom mpl_toolkits.basemap import Basemap\n\ndef plot_quakes(quakes):\n    m = Basemap(llcrnrlon=-124.960938,llcrnrlat=41.956070,\n                urcrnrlon=-114.062500,urcrnrlat=32.236792,\n                resolution='l',area_thresh=1000.,projection='merc',\n                lat_0=37.147894,lon_0=-119.599609)\n    m.drawcoastlines()\n    m.drawcountries()\n    m.fillcontinents(color='coral',lake_color='blue')\n    m.drawmapboundary(fill_color='aqua')\n    x, y = m(quakes.Lon, quakes.Lat)\n    m.plot(x, y, 'k.')\n    return m\n\nplot_quakes(california)\n\"\"\"\nor\n\"\"\"\nfeatures = data[1].values[1]\npprint(features)\n\nlatList = []    # Latitude\nlonList = []    # Longitude\naltList = []    # Altitude\nmagList = []    # Magnitude\nsrcList = []    # Source\nplaceList = []  # Place\ntimeList = []   # Time\n\nfor item in features:\n    geometry = item['geometry']\n    properties = item['properties']\n    \n    # Extract coordinates\n    lonList.append(geometry['coordinates'][0])\n    latList.append(geometry['coordinates'][1])\n    altList.append(geometry['coordinates'][2])\n    \n    # Extract other information\n    srcList.append(properties['sources'])\n    placeList.append(properties['place'])\n    timeList.append(properties['time'])\n    magList.append(properties['mag'])\n\nallQuakes = {'src': srcList, 'time': timeList, 'place': placeList, \n             'longitude': lonList, 'latitude': latList, 'altitude': altList,\n             'magnitude': magList}\n\n# So we can now what version is the Pickle file\nwith open('quakes-' + str(date.today()) + '.dict', 'wb') as f:\n    dump(allQuakes, f)\n\nwith open('quakes-2013-10-19.dict', 'rb') as f:\n    allQuakes = load(f)\n\ndf = pd.DataFrame(allQuakes)\ndf\n\nimport folium\nimport requests\nimport random\n\ndef getCurrentLocation(address):\n    data = {'address': address, 'sensor': 'false'}\n    r = requests.get(\"http://maps.googleapis.com/maps/api/geocode/json?\", params=data)\n    result = r.json()\n    \n    # Uncomment this next line if you want to see the structure of the data\n    # pprint(result)\n    \n    loc = result['results'][0]['geometry']['location']\n    return loc['lat'], loc['lng']\n\naddress = '101 Sproul Hall, Berkeley, CA 94704'\ncurrentLat, currentLon = getCurrentLocation(address)\n\nimport Tkinter\n\n# Random hex color generator\nr = lambda: random.randint(0,255)\n\n# Grab the width and height of the current window\nroot = Tkinter.Tk()\nscreenWidth = root.winfo_screenwidth()\nscreenHeight = root.winfo_screenheight()\n\nmap = folium.Map(location=[currentLat, currentLon], width=screenWidth, height=screenHeight, zoom_start=3)\n\nfor i in range(len(df)):\n    lat = df.at[i, 'latitude']\n    lon = df.at[i, 'longitude']\n    mag = df.at[i, 'magnitude']\n    place = df.at[i, 'place']\n    color = '#%02X%02X%02X' % (r(),r(),r())\n    map.circle_marker(location=[lat, lon], popup=str(place), radius=mag*25000,\n                       line_color=color, fill_color=color)\n\nmap.create_map(path='map.html')\n\"\"\"",
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "",
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}

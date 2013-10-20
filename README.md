@@ -36,12 +36,13 @@ You will need to first open your Virtual Machine.  Log in, and get it running!  
 
 Open a new directory within your virtual machine.  Here is where I am going to store my information for homework-02 and enter this directory.  From here we will open our iPython Notebook.
 
-  mkdir homework-02
-  ls
-  cd homework-02
-  ipython notebook --ip=0.0.0.0 --no-browser --script --pylab=inline
+    mkdir homework-02
+    ls
+    cd homework-02
+    ipython notebook --ip=0.0.0.0 --no-browser --script --pylab=inline
 
-From here we will now be able to run and operate out iPython Notebook.  Within your browser (ie. Safari) type into your bar `127.0.0.1:7777` to open the iPython Dashboard.  Here you should be all set to begin, and in the correct location for homework-02.
+
+From here we will now be able to run and operate out iPython Notebook.  Within your browser (ie. Safari) type into your bar `127.0.0.1:7777` to open the iPython Dashboard.  Here you should be all set to begin, and in the correct location for **homework-02**.
 
 **Curation, Analysis, & Visualization**
 

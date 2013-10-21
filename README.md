@@ -47,7 +47,10 @@ From here we will now be able to run and operate out iPython Notebook.  Within y
 
 **Curation, Analysis, & Visualization**
 
-.
+Within iPython Notebook we curated our data and provided a visual representation with our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) file.  We imported various packages and data from url's associated with the earthquake data to produce a data frame with the correct and accurate information.
+
+With our data frame, we produced various forms of visual representations that identify location, depth, and magnitude of earthquakes in various regions.
+
 
 Our Final Project: [Repository](https://github.com/lauraccunningham/homework-02
 ) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data.ipynb)

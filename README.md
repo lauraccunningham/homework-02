@@ -52,7 +52,7 @@ Within iPython Notebook we curated our data and provided a visual representation
 
 With our data frame, we produced various forms of visual representations that identify location, depth, and magnitude of earthquakes in various regions.
 
-__To run our data on your machine, you can open up our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) or [data2.ipynb](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data2.ipynb) by **git cloning** our repository to your virtual machine:
+__To run our data on your machine, you can open up our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) or [data2.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data2.ipynb) by **git cloning** our repository to your virtual machine:
 
     git clone https://github.com/lauraccunningham/homework-02.git
 

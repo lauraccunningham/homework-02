@@ -54,7 +54,7 @@ With our data frame, we produced various forms of visual representations that id
 
 __To run our data on your machine, you can open up our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) by **git cloning** our repository to your virtual machine:
 
-    git clone https://github.com/lauraccunningham/homework-02
+    git clone https://github.com/lauraccunningham/homework-02.git
 
 This command will copy the repository to your machine, and you can continue to open your machine by providing the **homework-02** directory as your source and the `ipython notebook --ip=0.0.0.0 --no-browser --script --pylab=inline` command.  Opening your browser with `127.0.0.1:7777` will prompt iPython Notebook and you can continue working.  There will be no need to create a directory this way, as the directory's purpose is a part of the process of creating the code initially.__
 

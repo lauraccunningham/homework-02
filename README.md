@@ -18,13 +18,14 @@ Step-by-Step Instructions for Homework-02
 
 **GOAL**
 
-.
+Using USGS's earthquake data, we will be visualizing a relationship of a specified time frame by examining location, magnitude, and depth of an event.  We have combined the roles of Curator and Producer as a signular analyzer of data and producer of a simple rubric for developing the data.  A data frame will then be examined and recreated as a visualization by the Entrpreneur & Integrator.
+
+Any questions we may have can be foud [here](https://github.com/stat157/recent-quakes/issues?state=open).
 
 **Parameters**
 
-- .
-- .
-- .
+- Earthquake Information: Location, Magnitude, & Depthesthetic
+- Group Roles: Curators & Visualizers
 
 _Earthquake data can be found [here](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) and at the right, the appropriate feed can be chosen for this assignment.  For our purposes, we will be choosing the data for [all earthquakes in the past 30 days](http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson)_
 

@@ -48,11 +48,11 @@ From here we will now be able to run and operate out iPython Notebook.  Within y
 
 **Curation, Analysis, & Visualization**
 
-Within iPython Notebook we curated our data and provided a visual representation with our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) file.  We imported various packages and data from url's associated with the earthquake data to produce a data frame with the correct and accurate information.
+Within iPython Notebook we curated our data and provided a visual representation with our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) file.  ( We have also included a more partitioned version of the curation process in code here as [data2.ipynb](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data2.ipynb).  We imported various packages and data from url's associated with the earthquake data to produce a data frame with the correct and accurate information.
 
 With our data frame, we produced various forms of visual representations that identify location, depth, and magnitude of earthquakes in various regions.
 
-__To run our data on your machine, you can open up our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) by **git cloning** our repository to your virtual machine:
+__To run our data on your machine, you can open up our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) or [data2.ipynb](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data2.ipynb) by **git cloning** our repository to your virtual machine:
 
     git clone https://github.com/lauraccunningham/homework-02.git
 
@@ -60,7 +60,7 @@ This command will copy the repository to your machine, and you can continue to o
 
 
 Our Final Project: [Repository](https://github.com/lauraccunningham/homework-02
-) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data.ipynb)
+) & Notebook Viewer Version [1](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data.ipynb) or [2](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data2.ipynb)
 
 ==========
 

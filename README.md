@@ -44,13 +44,19 @@ Open a new directory within your virtual machine.  Here is where I am going to s
     ipython notebook --ip=0.0.0.0 --no-browser --script --pylab=inline
 
 
-From here we will now be able to run and operate out iPython Notebook.  Within your browser open `127.0.0.1:7777` for seeing your iPython Dashboard.  Here you should be all set to begin, and in the correct location for **homework-02**.
+From here we will now be able to run and operate out iPython Notebook.  Within your browser open `127.0.0.1:7777` for seeing your iPython Dashboard.  Here you should be all set to begin, and in the correct location for **homework-02** and able to create a new data file within the homework-02 folder.
 
 **Curation, Analysis, & Visualization**
 
 Within iPython Notebook we curated our data and provided a visual representation with our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) file.  We imported various packages and data from url's associated with the earthquake data to produce a data frame with the correct and accurate information.
 
 With our data frame, we produced various forms of visual representations that identify location, depth, and magnitude of earthquakes in various regions.
+
+__To run our data on your machine, you can open up our [data.ipynb](https://github.com/lauraccunningham/homework-02/blob/master/data.ipynb) by **git cloning** our repository to your virtual machine:
+
+    git clone https://github.com/lauraccunningham/homework-02
+
+This command will copy the repository to your machine, and you can continue to open your machine by providing the **homework-02** directory as your source and the `ipython notebook --ip=0.0.0.0 --no-browser --script --pylab=inline` command.  Opening your browser with `127.0.0.1:7777` will prompt iPython Notebook and you can continue working.  There will be no need to create a directory this way, as the directory's purpose is a part of the process of creating the code initially.__
 
 
 Our Final Project: [Repository](https://github.com/lauraccunningham/homework-02
@@ -138,3 +144,4 @@ Also plot the quakes so we can see the magnitude and depth of each dot
 instead of the way they are plotted now which only shows the location;
 all the dots are the same color and the same size, but could be varied
 to represent more information in the same amount of space.
+
